@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Stock Profit & Loss Calculator</title>
 </head>
+
 <body>
-    Stock Profile
+    <div class="container">
+        <h1 class="heading">Stock Profit & Loss Calculator</h1>
+
+        <form onsubmit="return false">
+            <div class="form-container">
+                <label for="initial-price" class="label">Initial Price</label>
+                <input id="initial-price" class="input" type="number" min="1" required />
+                <label for="qty" class="label">Quantity of Stocks</label>
+                <input id="qty" class="input" type="number" min="1" required />
+                <label for="current-price" class="label">Current Price</label>
+                <input id="current-price" class="input" type="number" min="1" required />
+                <button id="check-button" type="submit">Calculate</button>
+            </div>
+        </form>
+        <div id="output"></div>
+    </div>
 </body>
+<script src="index.js"></script>
+
 </html>
